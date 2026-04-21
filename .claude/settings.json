@@ -15,57 +15,6 @@
             "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/post-tool-use-tracker.sh"
           }
         ]
-      },
-      {
-        "matcher": "Task",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "entire hooks claude-code post-task"
-          }
-        ]
-      },
-      {
-        "matcher": "TodoWrite",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "entire hooks claude-code post-todo"
-          }
-        ]
-      }
-    ],
-    "PreToolUse": [
-      {
-        "matcher": "Task",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "entire hooks claude-code pre-task"
-          }
-        ]
-      }
-    ],
-    "SessionEnd": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "entire hooks claude-code session-end"
-          }
-        ]
-      }
-    ],
-    "SessionStart": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "entire hooks claude-code session-start"
-          }
-        ]
       }
     ],
     "Stop": [
@@ -79,10 +28,6 @@
           {
             "type": "command",
             "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/trigger-build-resolver.sh"
-          },
-          {
-            "type": "command",
-            "command": "entire hooks claude-code stop"
           }
         ]
       }
@@ -94,10 +39,6 @@
           {
             "type": "command",
             "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/skill-activation-prompt.sh"
-          },
-          {
-            "type": "command",
-            "command": "entire hooks claude-code user-prompt-submit"
           }
         ]
       }
@@ -111,9 +52,6 @@
       "NotebookEdit:*",
       "Bash:*"
     ],
-    "defaultMode": "acceptEdits",
-    "deny": [
-      "Read(./.entire/metadata/**)"
-    ]
+    "defaultMode": "acceptEdits"
   }
 }
